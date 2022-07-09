@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
 }
-p{
+
+p {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
 }
 
+
 /* HEADER */
-header{
+
+header {
     position: fixed;
     width: 100vw;
     display: flex;
@@ -22,16 +25,16 @@ header{
     height: 84px;
     color: white;
     background: #0E0E0E;
-    color:#fff;
+    color: #fff;
     font-weight: 400;
 }
 
-header *:visited{
+header *:visited {
     text-decoration: none;
     color: #fff;
 }
 
-header *:link{
+header *:link {
     text-decoration: none;
     color: #fff;
 }
@@ -39,109 +42,114 @@ header *:link{
 header ul {
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
-header ul li{
+header ul li {
     list-style: none;
 }
 
-header ul li:not(:last-child, header ul ul li){
+header ul li:not(:last-child,
+header ul ul li) {
     margin-right: 32px;
 }
 
-.logo-container{
+.logo-container {
     margin-left: 91px;
 }
-.logo{
+
+.logo {
     width: 26.93px;
 }
-.logo-text{
+
+.logo-text {
     width: 215.46px;
 }
 
-.nav-hover:hover{
+.nav-hover:hover {
     transition: .16s;
     color: #FFC700;
 }
 
-.dropdown ul{
-    display:none;
+.dropdown ul {
+    display: none;
     background-color: #0E0E0E;
     margin: 0 0 0 -15px;
     padding-top: 16px;
     font-size: 80%;
-    
 }
 
-.dropdown ul li{
+.dropdown ul li {
     padding: 16px 30px;
 }
 
-.dropdown:hover ul{
+.dropdown:hover ul {
     display: flex;
     flex-direction: column;
-    position:absolute;
+    position: absolute;
 }
 
-.nav-btn{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-width: 110px;
-height: 40px;
-background: #FFC700;
-border-radius: 8px;
-margin-right: 128px;
-font-size: 16px;
+.nav-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 40px;
+    background: #FFC700;
+    border-radius: 8px;
+    margin-right: 128px;
+    font-size: 16px;
 }
 
-.nav-btn:hover>a{
+.nav-btn:hover>a {
     color: #0E0E0E;
     transform: scale(1.05);
     transition: .4s;
 }
+
+
 /* MAIN DESCRIPTION*/
-section:nth-of-type(1){
+
+section:nth-of-type(1) {
     display: flex;
     justify-content: space-between;
     padding-top: 75px;
     overflow: hidden;
 }
 
-.main-desc{
+.main-desc {
     display: flex;
     flex-direction: column;
-    
     width: 493px;
-    margin:124px 0 0 93px;
+    margin: 124px 0 0 93px;
 }
 
-.main-desc h1{
+.main-desc h1 {
     font-size: 64px;
     font-weight: 700;
     line-height: 77.45px;
     margin-bottom: 51px;
 }
 
-.main-desc .content p{
+.main-desc .content p {
     margin-bottom: 51px;
 }
 
-
-.main-desc *:visited{
+.main-desc *:visited {
     text-decoration: none;
     color: #fff;
 }
 
-.main-desc *:link{
+.main-desc *:link {
     text-decoration: none;
     color: #fff;
 }
+
 
 /* PRODUCTS */
-.products{
+
+.products {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,28 +157,30 @@ section:nth-of-type(1){
     color: #fff;
 }
 
-.box{
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 476px;
     width: 100vw;
-    padding:118px 69px 60px 68px;
+    padding: 118px 69px 60px 68px;
 }
 
-.box:nth-of-type(1){
-    background:#000;
-}
-.box:nth-of-type(2){
-    background:#FFDE6A;
-}
-.box:nth-of-type(3){
-    background:#FFC700;
+.box:nth-of-type(1) {
+    background: #000;
 }
 
-.box h1{
-    height:48px;
+.box:nth-of-type(2) {
+    background: #FFDE6A;
+}
+
+.box:nth-of-type(3) {
+    background: #FFC700;
+}
+
+.box h1 {
+    height: 48px;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
@@ -178,12 +188,14 @@ section:nth-of-type(1){
     margin-bottom: 36px;
 }
 
-.box p{
+.box p {
     max-width: 339px;
 }
 
+
 /*ABOUT US*/
-.about-us{
+
+.about-us {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,64 +205,68 @@ section:nth-of-type(1){
     color: #000;
 }
 
-.about-us h1{
+.about-us h1 {
     font-size: 32px;
     font-weight: 700;
     line-height: 38px;
     margin-bottom: 51px;
 }
 
-.about-us p{
+.about-us p {
     width: 876px;
     margin-bottom: 60px;
-    
 }
 
+
 /*INVEST*/
-.invest{
+
+.invest {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
 }
-.invest div{
+
+.invest div {
     display: flex;
     height: 647px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background: #FFC700;
-    padding:0 6.7%;
+    padding: 0 6.7%;
 }
 
-.invest div h1{
+.invest div h1 {
     font-size: 36px;
     font-weight: 700;
     line-height: 43px;
     margin-bottom: 60px;
 }
 
+
 /* SERVICES*/
-.services{
+
+.services {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-    padding:88px 200px 0 200px;
+    padding: 88px 200px 0 200px;
+    margin-bottom: 140px;
 }
-.services .container{
+
+.services .container {
     display: flex;
     justify-content: space-around;
     align-items: space-between;
     margin-top: 88px;
     max-width: 1000px;
     flex-wrap: wrap;
-
 }
 
-
-.card{
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,32 +275,31 @@ section:nth-of-type(1){
     max-width: 308px;
     width: 100%;
     flex-grow: 1;
-    
 }
 
-.card h1{
+.card h1 {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
-    margin-top:14px;
+    margin-top: 14px;
     margin-bottom: 27px;
     width: 100%;
 }
 
-.card p{
+.card p {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color:  #838383;
+    color: #838383;
     padding: 20px;
 }
 
-.card:nth-last-of-type(){
+.card:nth-last-of-type() {
     margin-right: 10vw;
 }
 
-.circle{
+.circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,34 +307,36 @@ section:nth-of-type(1){
     height: 94px;
     background: #000;
     border-radius: 100%;
-
 }
+
 
 /*CONTACT*/
 
-.contact{
+.contact {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     background: #FFDE6A;
-    color:#000;
-    padding: 49px 163px 27px 114px;
+    color: #000;
+    padding: 49px 163px 40px 114px;
 }
-.contact .container{
-    max-width: 950px;
 
+.contact .container {
+    max-width: 950px;
 }
-.contact .container h1{
+
+.contact .container h1 {
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
 }
-.contact .container p{
+
+.contact .container p {
     margin-top: 25px;
 }
 
-.contact .btn{
+.contact .btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,10 +344,62 @@ section:nth-of-type(1){
     padding-left: 60px;
 }
 
+
 /* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding:40px 300px 40px 260px;
+    background: #000;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+footer div:not(:last-of-type) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 181px;
+    text-align: center;
+}
+
+footer div:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 40px;
+}
+footer div:last-of-type div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    width: 178px;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+footer div h1{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+footer div p{
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+
+
 /* Fixed Styles */
 
-.btn-dark{
+.btn-dark {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -346,14 +415,14 @@ section:nth-of-type(1){
     border-radius: 8px;
 }
 
-.btn-dark:hover{
+.btn-dark:hover {
     background-color: transparent;
     border: 1px solid #000;
     color: black;
     transition: .3s;
 }
 
-.btn-light{
+.btn-light {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -371,10 +440,9 @@ section:nth-of-type(1){
     border-radius: 8px;
 }
 
-.btn-light:hover{
+.btn-light:hover {
     background-color: #000;
     border: none;
     color: #fff;
     transition: .3s;
 }
-
