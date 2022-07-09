@@ -139,75 +139,7 @@ section:first-of-type {
     margin-bottom: 51px;
 }
 
-.main-desc *:visited {
-    text-decoration: none;
-    color: #fff;
-}
-
-.main-desc *:link {
-    text-decoration: none;
-    color: #fff;
-}
-
-@media (max-width:1200px){
-    /*  HEADER  */
-
-    header{
-        height: 60px;
-        font-size: 90%;
-    }
-
-    header ul li:not(:last-child,
-header ul ul li) {
-
-    margin-right: 25px;
-}
-
-    .logo-container {
-        margin-left: 75px;
-    }
-    .logo {
-        width: 20px;
-    }
-    
-    .logo-text {
-        width: 160px;
-    }
-
-    .nav-btn{
-        width: 80px;
-        height: 30px;
-        font-size:12px;
-        margin-right: 80px;
-    }
-    /*MAIN DESCRIPTION*/
-    section:first-of-type{
-        padding-top: 50px;
-    }
-    section:first-of-type img{
-        height: 400px;
-        margin:0 6vw 0 2.3vw;
-        box-shadow: -3px 0px 20px 3px rgba(0, 0, 0, 0.486);
-    }
-    /* INVEST */
-    .invest{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .invest img{
-        height: 400px;
-        margin:0 6vw 0 2.3vw;
-        box-shadow: -3px 0px 20px 3px rgba(0, 0, 0, 0.486);
-    }
-    .invest div h1{
-        font-size: 30px;
-    }
-
-    .invest div p{
-        font-size: 16px;
-    }
-
-}
+/*  HEADER  */
 
 /* PRODUCTS */
 
@@ -414,7 +346,7 @@ header ul ul li) {
 footer {
     display: flex;
     justify-content: center;
-    padding:40px 300px 40px 260px;
+    padding:40px 100px 40px 100px;
     background: #000;
     color: #fff;
     flex-wrap: wrap;
@@ -445,6 +377,10 @@ footer div:last-of-type div:first-of-type{
     flex-direction: row;
     margin-bottom: 20px;
 }
+
+footer div:nth-of-type(2) p{
+    width: 240px;
+}
 footer div h1{
     font-weight: 700;
     font-size: 20px;
@@ -459,8 +395,100 @@ footer div p{
 }
 
 
+/* RESPONSIVE */
+@media (max-width:1200px){
 
+    header{
+        height: 60px;
+        font-size: 90%;
+    }
 
+    header ul li:not(:last-child,
+header ul ul li) {
+
+    margin-right: 25px;
+}
+
+    .logo-container {
+        margin-left: 75px;
+    }
+    .logo {
+        width: 20px;
+    }
+    
+    .logo-text {
+        width: 160px;
+    }
+
+    .nav-btn{
+        width: 80px;
+        height: 30px;
+        font-size:12px;
+        margin-right: 80px;
+    }
+    /*MAIN DESCRIPTION*/
+    section:first-of-type{
+        padding-top: 50px;
+    }
+    section:first-of-type img{
+        height: 450px;
+        width:370px;
+        object-fit:cover;
+        object-position: -10% 0;
+    }
+
+    .main-desc{
+        margin-top:90px;
+        margin-bottom: 40px;
+    }
+    .main-desc h1{
+        font-size:44px;
+        line-height: 56px;
+       
+    }
+    .main-desc .content p {
+        line-height: 25px;
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    /* PRODUCTS */
+    .products div h1{
+        font-size: 26px;
+    }
+    .products div p{
+        font-size: 17px;
+        line-height: 26px;
+    }
+    /* INVEST */
+    .invest{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .invest img{
+        height: 400px;
+        margin:0 6vw 0 2.3vw;
+        box-shadow: -3px 0px 20px 3px rgba(0, 0, 0, 0.486);
+    }
+    .invest div h1{
+        font-size: 30px;
+    }
+
+    .invest div p{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:992px){
+    header ul, .nav-btn{
+        display: none;
+    }
+
+    .logo-container{
+        margin-left: 45px;
+    }
+}
 /* Fixed Styles */
 
 .btn-dark {
