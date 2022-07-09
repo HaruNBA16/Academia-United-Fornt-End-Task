@@ -55,6 +55,9 @@ header ul ul li) {
 }
 
 .logo-container {
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
     margin-left: 91px;
 }
 
@@ -111,7 +114,7 @@ header ul ul li) {
 
 /* MAIN DESCRIPTION*/
 
-section:nth-of-type(1) {
+section:first-of-type {
     display: flex;
     justify-content: space-between;
     padding-top: 75px;
@@ -146,6 +149,65 @@ section:nth-of-type(1) {
     color: #fff;
 }
 
+@media (max-width:1200px){
+    /*  HEADER  */
+
+    header{
+        height: 60px;
+        font-size: 90%;
+    }
+
+    header ul li:not(:last-child,
+header ul ul li) {
+
+    margin-right: 25px;
+}
+
+    .logo-container {
+        margin-left: 75px;
+    }
+    .logo {
+        width: 20px;
+    }
+    
+    .logo-text {
+        width: 160px;
+    }
+
+    .nav-btn{
+        width: 80px;
+        height: 30px;
+        font-size:12px;
+        margin-right: 80px;
+    }
+    /*MAIN DESCRIPTION*/
+    section:first-of-type{
+        padding-top: 50px;
+    }
+    section:first-of-type img{
+        height: 400px;
+        margin:0 6vw 0 2.3vw;
+        box-shadow: -3px 0px 20px 3px rgba(0, 0, 0, 0.486);
+    }
+    /* INVEST */
+    .invest{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .invest img{
+        height: 400px;
+        margin:0 6vw 0 2.3vw;
+        box-shadow: -3px 0px 20px 3px rgba(0, 0, 0, 0.486);
+    }
+    .invest div h1{
+        font-size: 30px;
+    }
+
+    .invest div p{
+        font-size: 16px;
+    }
+
+}
 
 /* PRODUCTS */
 
@@ -224,17 +286,19 @@ section:nth-of-type(1) {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 647px;
     color: #fff;
+    background: #FFC700;
 }
 
 .invest div {
     display: flex;
-    height: 647px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height:100%;
     background: #FFC700;
-    padding: 0 6.7%;
+    padding: 0 5vw;
 }
 
 .invest div h1 {
