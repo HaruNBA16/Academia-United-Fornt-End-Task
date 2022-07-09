@@ -11,7 +11,8 @@
 </head>
 
 <!-- Header -->
-<header>
+    <!-- Desktop -->
+<header class="desktop-nav">
 
     <h1 class="logo-container">
         <a href="#">
@@ -21,7 +22,7 @@
     </h1>
     <ul>
         <li><a href="#" class="nav-hover">Home</a></li>
-        <li class="dropdown">
+        <li class="desktop-dropdown">
             <div class="nav-hover">
                 <a href="#" class="nav-hover">Products <i class="ai-chevron-down"></i></a>
             </div>
@@ -36,13 +37,37 @@
         <li><a class="nav-hover" href="#">Contact Us</a></li>
     </ul>
     <div class="nav-btn"><a href="#">Invest</a></div>
+    <div class="menu-btn"><i class="ai-three-line-horizontal"></i></div>
+</header>
+    <!-- Mobile -->
+<header class="mobile-nav">
+    <nav>
+        <div class="hide-menu"><i class="ai-cross"></i></div>
+        <ul>
+            <li><a href="#" class="nav-hover">Home</a></li>
+            <li class="mobile-dropdown">
+                <div class="nav-hover">
+                    <a href="#" class="nav-hover">Products <i class="ai-chevron-down"></i></a>
+                </div>
+                <ul>
+                    <li><a class="nav-hover" href="#">Product 1</a></li>
+                    <li><a class="nav-hover" href="#">Product 2</a></li>
+                    <li><a class="nav-hover" href="#">Product 3</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-hover" href="#">About</a></li>
+            <li><a class="nav-hover" href="#">Our Services</a></li>
+            <li><a class="nav-hover" href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    
 </header>
 <!-- End Header -->
 
 <!-- Section Description-->
 <section>
     <div class="main-desc">
-        <h1>We help your brand to be recognizable</h1>
+    <h1>We help your brand to be recognizable</h1>
         <div class="content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat euismod interdum sollicitudin auctor tincidunt amet urna. Rutrum lacinia ut faucibus diam sem lectus.</p>
             <a class="btn-dark" href="">Contact Us</a>

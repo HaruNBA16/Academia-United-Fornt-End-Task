@@ -15,8 +15,8 @@ p {
 
 
 /* HEADER */
-
-header {
+    /* Desktop */
+.desktop-nav {
     position: fixed;
     width: 100vw;
     display: flex;
@@ -29,28 +29,28 @@ header {
     font-weight: 400;
 }
 
-header *:visited {
+.desktop-nav *:visited {
     text-decoration: none;
     color: #fff;
 }
 
-header *:link {
+.desktop-nav *:link {
     text-decoration: none;
     color: #fff;
 }
 
-header ul {
+.desktop-nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li {
+.desktop-nav ul li {
     list-style: none;
 }
 
-header ul li:not(:last-child,
-header ul ul li) {
+.desktop-nav ul li:not(:last-child,
+.desktop-nav ul ul li) {
     margin-right: 32px;
 }
 
@@ -74,7 +74,7 @@ header ul ul li) {
     color: #FFC700;
 }
 
-.dropdown ul {
+.dekstop-dropdown ul {
     display: none;
     background-color: #0E0E0E;
     margin: 0 0 0 -15px;
@@ -82,11 +82,11 @@ header ul ul li) {
     font-size: 80%;
 }
 
-.dropdown ul li {
+.dekstop-dropdown ul li {
     padding: 16px 30px;
 }
 
-.dropdown:hover ul {
+.dekstop-dropdown:hover ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -110,6 +110,58 @@ header ul ul li) {
     transform: scale(1.05);
     transition: .4s;
 }
+    
+    /* Mobile */
+
+.menu-btn{
+    display: none;
+    margin-right: 50px;
+}
+
+.menu-btn:hover{
+    cursor: pointer;
+}
+
+.menu-btn i{
+    font-size: 25px;
+}
+
+.mobile-nav{
+    display: none;
+    justify-content: right;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.534);
+    width: 100vw;
+    height: 100vh;
+}
+
+.mobile-nav nav{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width:300px;
+    background: #0E0E0E;
+    padding: 10px 20px;
+}
+.mobile-nav nav ul:not(.mobile-nav nav ul ul){
+    margin-top: 30px;
+    list-style:none;
+}
+.hide-menu {
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 25px;
+}
+
+.hide-menu i{
+    padding: 5px;
+    cursor: pointer;
+}
+
+
 
 
 /* MAIN DESCRIPTION*/
@@ -398,13 +450,13 @@ footer div p{
 /* RESPONSIVE */
 @media (max-width:1200px){
 
-    header{
+    .desktop-nav{
         height: 60px;
         font-size: 90%;
     }
 
-    header ul li:not(:last-child,
-header ul ul li) {
+    .desktop-nav ul li:not(:last-child,
+.desktop-nav ul ul li) {
 
     margin-right: 25px;
 }
@@ -481,12 +533,16 @@ header ul ul li) {
 }
 
 @media (max-width:992px){
-    header ul, .nav-btn{
+    .desktop-nav ul, .nav-btn{
         display: none;
     }
 
     .logo-container{
         margin-left: 45px;
+    }
+
+    .menu-btn{
+        display: block;
     }
 }
 /* Fixed Styles */
