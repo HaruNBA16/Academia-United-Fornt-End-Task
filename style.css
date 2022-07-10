@@ -74,7 +74,7 @@ p {
     color: #FFC700;
 }
 
-.dekstop-dropdown ul {
+.desktop-dropdown ul {
     display: none;
     background-color: #0E0E0E;
     margin: 0 0 0 -15px;
@@ -82,11 +82,11 @@ p {
     font-size: 80%;
 }
 
-.dekstop-dropdown ul li {
+.desktop-dropdown ul li {
     padding: 16px 30px;
 }
 
-.dekstop-dropdown:hover ul {
+.desktop-dropdown:hover ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -127,7 +127,7 @@ p {
 }
 
 .mobile-nav{
-    display: none;
+    display: flex;
     justify-content: right;
     position: fixed;
     background: rgba(0, 0, 0, 0.534);
@@ -145,8 +145,29 @@ p {
 }
 .mobile-nav nav ul:not(.mobile-nav nav ul ul){
     margin-top: 30px;
-    list-style:none;
 }
+
+.mobile-nav ul li{
+    margin-top: 10px;
+    list-style:none;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.mobile-nav ul a:visited{
+    color: #fff;
+}
+.mobile-dropdown ul{
+    display: none;
+}
+
+.mobile-dropdown:active > .mobile-dropdown{
+    display: none;
+}
+
+
+
 .hide-menu {
     display: flex;
     justify-content:flex-end;
