@@ -127,12 +127,13 @@ p {
 }
 
 .mobile-nav{
-    display: flex;
+    display: none;
     justify-content: right;
     position: fixed;
     background: rgba(0, 0, 0, 0.534);
     width: 100vw;
     height: 100vh;
+    color: #fff;
 }
 
 .mobile-nav nav{
@@ -143,12 +144,9 @@ p {
     background: #0E0E0E;
     padding: 10px 20px;
 }
-.mobile-nav nav ul:not(.mobile-nav nav ul ul){
-    margin-top: 30px;
-}
 
 .mobile-nav ul li{
-    margin-top: 10px;
+    margin-top: 30px;
     list-style:none;
     padding: 5px;
     border-radius: 5px;
@@ -162,8 +160,11 @@ p {
     display: none;
 }
 
-.mobile-dropdown:active > .mobile-dropdown{
-    display: none;
+.mobile-dropdown ul li{
+    margin-top: 10px;
+}
+.mobile-dropdown ul li:first-of-type{
+    margin-top: 20px;
 }
 
 
@@ -471,6 +472,7 @@ footer div p{
 /* RESPONSIVE */
 @media (max-width:1200px){
 
+    /* Header */
     .desktop-nav{
         height: 60px;
         font-size: 90%;
@@ -499,7 +501,8 @@ footer div p{
         font-size:12px;
         margin-right: 80px;
     }
-    /*MAIN DESCRIPTION*/
+
+    /*Main Description*/
     section:first-of-type{
         padding-top: 50px;
     }
@@ -525,7 +528,7 @@ footer div p{
         margin-bottom: 40px;
     }
 
-    /* PRODUCTS */
+    /* Products */
     .products div h1{
         font-size: 26px;
     }
@@ -533,7 +536,7 @@ footer div p{
         font-size: 17px;
         line-height: 26px;
     }
-    /* INVEST */
+    /* Invest */
     .invest{
         display: flex;
         flex-direction: row-reverse;
@@ -554,6 +557,7 @@ footer div p{
 }
 
 @media (max-width:992px){
+    /* Header */
     .desktop-nav ul, .nav-btn{
         display: none;
     }
@@ -565,6 +569,64 @@ footer div p{
     .menu-btn{
         display: block;
     }
+
+    /* Main Description */
+    section:first-of-type img{
+        display: none;
+    }
+
+    .main-desc{
+        width: 100%;
+        padding:0 10% 10px 0 ;
+    }
+
+    /* Products */
+    .box{
+        padding: 25px;
+    }
+    .box h1{
+        font-size: 24px !important;
+        line-height: 30px !important;
+    }
+    .box p{
+        font-size: 16px !important;
+    line-height: 24px !important;
+    }
+
+    /* About Us */
+    .about-us{
+        padding: 50px ;
+    }
+
+    .about-us p{
+        font-size: 15px ;
+        width: 80vw;
+    }
+
+    /* Contact */
+    .contact{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact h1{
+        font-size: 28px !important;
+    }
+    .contact p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    .contact .btn{
+        margin: 30px 0 0 0;
+        padding: 0;
+        justify-content: left !important;
+    }
+
+
+}
+
+@media (max-width:768px){
+    /* Contact */
 }
 /* Fixed Styles */
 
